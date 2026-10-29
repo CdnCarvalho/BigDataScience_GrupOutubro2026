@@ -17,12 +17,40 @@
 
 
 
+# Atividade 1 — Compra de refrigerantes
+# Você foi ao mercado comprar refrigerantes para uma reunião com amigos.
+# Crie um programa que solicite o preço de uma unidade e a quantidade comprada. 
+# Ao final, calcule e mostre o valor total da compra.
+preco = float(input("Digite o preço do refrigerante: R$ "))
+quantidade = int(input("Digite a quantidade comprada: "))
+
+total = preco * quantidade
+
+print(f"Valor total da compra: R$ {total:.2f}")
+
+
+
+
+# Atividade 2 — Divisão da conta da pizzaria
+# Você e seus amigos foram a uma pizzaria. A conta ficou em R$ 120,00, 
+# e todos decidiram dividir o valor igualmente. Crie um programa que solicite a 
+# quantidade de pessoas e calcule quanto cada uma deverá pagar.
+valor_conta = 120.00
+
+pessoas = int(input("Quantas pessoas vão dividir a conta? "))
+
+valor_por_pessoa = valor_conta / pessoas
+
+print(f"Cada pessoa deverá pagar R$ {valor_por_pessoa:.2f}")
 
 
 
 
 # ATIVIDADE  - Aumento de salário
-# Enunciado: Calcule o novo salário de um funcionário com aumento de 15%.
+# Atividade — Cálculo de aumento salarial
+# Crie um programa que solicite o salário atual de um funcionário. 
+# Em seguida, calcule um aumento de 15% sobre o salário e apresente 
+# o valor do aumento e o novo salário do funcionário após o reajuste.
 salario = float(input("Digite o valor do seu salário: "))
 aumento = salario * 0.15
 novo_salario = salario + aumento
