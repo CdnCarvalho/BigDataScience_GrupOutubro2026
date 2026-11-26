@@ -8,18 +8,9 @@ for i in range(2):
         
         media = total_produzido / vendedores
 
-    # except (ValueError, TypeError):
-    #     print("\nErro - Informe os dados corretamente")
 
-    # except ZeroDivisionError:
-    #     print('Erro - Vendedor não pode ser zero - 0')
-    
-    # except KeyboardInterrupt:
-    #     print("\nPrograma encerrado")
-    #     exit()
     except Exception as e:
         print(f"Erro Inesperado! {e}")
-
     
     else:
         print("\nDENTRO DO ELSE")

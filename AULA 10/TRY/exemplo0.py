@@ -4,10 +4,12 @@
 print(nome)
 # ----------------------------------------------
 
+
 # ---ValueError: Digitar letras ao invés de números
 idade = int(input('Informe a idade: '))
 print(idade)
 # ----------------------------------------------
+
 
 # ---TypeError: Operação entre tipos incompatíveis (Strings com ints ou floats)
 n1 = int(input('Informe o número: '))
@@ -17,6 +19,7 @@ total = n1 + n2
 print(f'Total: {total}')
 # ----------------------------------------------
 
+
 # ---ZeroDivisionError: Divisão por zero
 num1 = float(input('Informe um número: '))
 num2 = float(input('Informe outro número: '))
@@ -24,6 +27,7 @@ num2 = float(input('Informe outro número: '))
 resultado = num1 / num2
 print(f'Resultado:  {resultado}')
 # ----------------------------------------------
+
 
 # ---IndexError: Índice fora do intervalo da lista
 lst_nomes = ['maria', 'joão', 'pedro', 'tiago']

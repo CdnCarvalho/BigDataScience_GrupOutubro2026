@@ -1,30 +1,39 @@
+print('''
+========================
+    Caixa Eletrônico
+========================
+''')
 
-print("Caixa Eletrônico")
-
-# cedulas_disponiveis = [200, 100, 50]
 
 try:
+    # saldo disponível na conta
     saldo = 1000
-    print(f"Valor disponível: {saldo}")
-    vlr_saque = float(input("Informe o valor para saque: "))
 
-    if vlr_saque > saldo:
-        print("Saldo insuficiente!")
+    saque = float(input('Informe o valor do saque: '))
 
-    
-    elif vlr_saque % 50 != 0:
-        print("Notas disponíveis: [50][100][200]")
-
-
-    elif 0 < vlr_saque <= saldo:
-        print(f'Valor sacado: {vlr_saque}')
-        saldo -= vlr_saque
-        print(f'====Valor disponível: {saldo}')
-
-
-except Exception as e:
-    print(f'Erro Inesperado: {e}')    
-
+# ocorre quando o usuário digita valores inválidos
+except ValueError:
+    print('Informe apenas números.')
 
 except KeyboardInterrupt:
-    print(f'Encerrado pelo Usuário.') 
+    print('Encerrado pelo usuário.')
+
+else:
+    # executa somente se NÃO ocorrer erro
+    if saque > saldo:
+        print('\nSaldo Insuficiente')
+
+    # verifica se o saque é menor
+    elif saque < 10:
+        print('O valor precisa ser a partir de R$ 10')
+
+    else:
+        # realiza o saque
+        saldo -= saque
+        print('\nSaque realizado')
+        print(f'Saldo restante de R$ {saldo}')
+
+finally:
+   # Sempre executa
+    print('Operação Encerrada')
+    exit()
